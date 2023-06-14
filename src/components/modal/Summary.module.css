@@ -1,0 +1,23 @@
+.summary {
+  padding: 10px;
+}
+
+.summary-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-detail:last-child {
+  font-weight: bold;
+}
+
+.summary-detail p,
+.summary-detail span {
+  color: var(--color-quaternary-variant-2);
+}
+
+.trial p,
+.trial span {
+  color: var(--color-quinary);
+}

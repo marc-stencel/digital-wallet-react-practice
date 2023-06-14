@@ -1,0 +1,119 @@
+.full-nav {
+  display: none;
+}
+
+.navBrand {
+  background: var(--bg-color-primary-variant-3);
+  background: linear-gradient(
+    90deg,
+    var(--bg-color-primary-variant-3) 0%,
+    var(--bg-color-primary-variant-2) 50%,
+    var(--bg-color-primary) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  font-weight: 900;
+  margin-right: auto;
+}
+
+.business,
+.help,
+.login {
+  font-weight: bold;
+  padding: 6px;
+}
+
+.business {
+  color: var(--color-primary-variant-4);
+  font-size: 14px;
+  transition: color 0.3s linear;
+}
+
+.business:hover {
+  color: var(--color-primary-variant-3);
+}
+
+.help,
+.login {
+  align-items: center;
+  border-bottom: 2px solid var(--color-tertiary);
+  color: var(--color-primary-variant-2);
+  display: flex;
+  transition: border-bottom-color 0.3s linear;
+}
+
+.help:hover,
+.login:hover {
+  border-bottom-color: var(--color-primary-variant-2);
+}
+
+.register {
+  background-color: var(--bg-color-primary-variant-3);
+  border: 1px solid var(--color-primary-variant-3);
+  border-radius: 5px;
+  color: var(--color-tertiary);
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 6px;
+  padding: 6px 10px;
+  text-align: center;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  width: 80px;
+}
+
+.register:hover {
+  background-color: var(--bg-color-tertiary);
+  color: var(--color-primary-variant-3);
+}
+
+@media (min-width: 415px) {
+  .full-nav {
+    align-items: center;
+    background-color: var(--bg-color-tertiary);
+    box-shadow: 0 10px 10px -12px black;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: var(--nav-height);
+    padding: 9px 2%;
+  }
+}
+
+@media (min-width: 576px) {
+  .business,
+  .help,
+  .login {
+    margin: 0 6px;
+  }
+
+  .business,
+  .register {
+    font-size: 16px;
+  }
+
+  .register {
+    margin: 0 0 0 10px;
+    width: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .full-nav {
+    padding: 0 5%;
+  }
+
+  .navBrand {
+    font-size: 44px;
+  }
+
+  .help,
+  .login {
+    font-size: 20px;
+  }
+
+  .register {
+    font-size: 18px;
+    width: 140px;
+  }
+}

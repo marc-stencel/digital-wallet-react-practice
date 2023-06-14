@@ -1,0 +1,32 @@
+.footer {
+  border-top: 2px solid var(--color-primary);
+  margin: 35px auto 60px;
+  padding: 35px 15px 0;
+}
+
+.h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.description {
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+@media (min-width: 576px) {
+  .footer {
+    margin-bottom: 10px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}

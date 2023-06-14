@@ -1,0 +1,51 @@
+.sign-up {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0 30px;
+}
+
+.sign-up h2 {
+  margin-bottom: 15px;
+}
+
+.question-wrapper {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.sign-up h2,
+.question {
+  color: var(--color-quaternary-variant-2);
+  font-weight: normal;
+  text-align: center;
+}
+
+.question {
+  padding-right: 5px;
+}
+
+.link {
+  font-size: 16px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+@media (min-width: 576px) {
+  .sign-up {
+    background-color: var(--bg-color-tertiary);
+    border-radius: 20px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sign-up {
+    margin: 60px auto 60px 0;
+  }
+}

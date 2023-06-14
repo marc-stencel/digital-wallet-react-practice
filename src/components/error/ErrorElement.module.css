@@ -1,0 +1,18 @@
+.error-section {
+  margin: calc(var(--nav-height) + 60px) 10% 100px;
+  text-align: center;
+}
+
+.h1 {
+  animation: showHeader 2s 0.25s forwards;
+  font-size: 22px;
+  opacity: 0;
+  transform: translateX(-30%);
+}
+
+@keyframes showHeader {
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

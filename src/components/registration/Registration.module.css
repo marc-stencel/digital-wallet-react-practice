@@ -1,0 +1,22 @@
+@media (min-width: 576px) {
+  .wrapper {
+    background-color: var(--bg-color-primary-variant-3);
+    background: linear-gradient(
+      121.84deg,
+      var(--color-primary-variant-3) 15%,
+      var(--color-primary-variant-2) 50%,
+      var(--color-primary) 80%
+    );
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+}

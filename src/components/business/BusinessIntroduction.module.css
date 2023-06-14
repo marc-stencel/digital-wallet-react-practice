@@ -1,0 +1,73 @@
+.background {
+  background-color: var(--bg-color-primary);
+  background-image: url('../../assets/images/backgrounds/hero-business.webp');
+  background-position: 50% 40%;
+  background-size: cover;
+  padding: 30px 5% 30px;
+}
+
+.h1 {
+  animation: showHeader 2s 0.25s forwards;
+  color: var(--color-tertiary);
+  font-size: 40px;
+  margin: 0 10%;
+  opacity: 0;
+  text-align: center;
+  transform: translateX(-30%);
+}
+
+.description {
+  animation: showDescription 1.5s 0.5s forwards;
+  color: var(--color-tertiary);
+  font-size: 20px;
+  margin: 25px 10px;
+  opacity: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .background {
+    background-position: 70% 40%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 40%;
+  }
+
+  .h1,
+  .description {
+    text-align: left;
+  }
+
+  .h1 {
+    font-size: 52px;
+    margin: 0;
+  }
+
+  .description {
+    margin: 15px 0;
+  }
+}
+
+@keyframes showHeader {
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes showDescription {
+  100% {
+    opacity: 1;
+  }
+}

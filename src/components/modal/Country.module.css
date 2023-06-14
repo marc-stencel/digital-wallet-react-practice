@@ -1,0 +1,84 @@
+.country {
+  border-bottom: 1px solid var(--color-quaternary-variant);
+  display: flex;
+  padding: 5px 10px 15px;
+}
+
+.amount {
+  width: 65%;
+}
+
+.country label,
+.country input {
+  display: block;
+}
+
+.country label {
+  color: var(--color-quaternary-variant);
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.country label:has(+ input:focus) {
+  color: var(--color-primary);
+}
+
+.country label strong {
+  color: inherit;
+}
+
+.country input {
+  border: none;
+  color: var(--color-primary);
+  font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.country input:focus {
+  outline: transparent;
+}
+
+.currency {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+}
+
+.currency::before {
+  background-color: var(--bg-color-primary);
+  content: '';
+  height: 75%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+}
+
+.flag {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 70%;
+}
+
+.abbreviation {
+  color: var(--color-quaternary);
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}

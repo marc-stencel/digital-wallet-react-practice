@@ -1,0 +1,60 @@
+.button {
+  align-items: center;
+  background-color: var(--bg-color-primary);
+  border: none;
+  bottom: 0;
+  color: var(--color-tertiary);
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+}
+
+.button::before {
+  background-image: url('../../assets/images/calculator-fill.svg');
+  background-repeat: no-repeat;
+  content: '';
+  height: 30px;
+  margin-right: 8px;
+  width: 30px;
+}
+
+.button:disabled {
+  animation: none;
+  opacity: 0.8;
+}
+
+@media (min-width: 576px) {
+  .button {
+    animation: buttonBounce 6s infinite;
+    bottom: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 8px 2px var(--color-primary-variant-4);
+    height: 80px;
+    right: 3%;
+    max-width: 180px;
+    z-index: 1;
+  }
+
+  .button:focus,
+  .button:hover {
+    background-color: var(--bg-color-primary-variant-4);
+  }
+}
+
+@keyframes buttonBounce {
+  45% {
+    transform: translateY(0);
+  }
+  54%,
+  56% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(0);
+  }
+}

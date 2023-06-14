@@ -1,0 +1,36 @@
+.text,
+.sites {
+  display: none;
+}
+
+.text {
+  color: var(--color-tertiary);
+}
+
+.sites {
+  margin: 25px 0 50px;
+}
+
+.sites img {
+  padding: 0 10px;
+}
+
+@media (min-width: 576px) {
+  .text {
+    display: block;
+  }
+
+  .sites {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .sites {
+    flex-wrap: wrap;
+  }
+  .sites img {
+    padding: 4px 26px;
+  }
+}

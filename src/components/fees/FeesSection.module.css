@@ -1,0 +1,84 @@
+.h1 {
+  animation: showHeader 2s 0.25s forwards;
+  font-size: 40px;
+  margin: 35px 20%;
+  opacity: 0;
+  text-align: center;
+  transform: translateX(-30%);
+}
+
+.h2 {
+  animation: showHeader 2s 0.55s forwards;
+  font-size: 20px;
+  opacity: 0;
+  padding: 0 15px;
+  text-align: center;
+  transform: translateX(-30%);
+}
+
+.register {
+  animation: showAnchor 1s 1s forwards;
+  background-color: var(--bg-color-primary-variant-3);
+  border: 1px solid var(--color-primary-variant-3);
+  border-radius: 5px;
+  color: var(--color-tertiary);
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  transform: scale(0);
+  transition: background-color 0.3s linear, color 0.3s linear;
+  width: 220px;
+}
+
+.register:hover {
+  background-color: var(--bg-color-tertiary);
+  color: var(--color-primary-variant-3);
+}
+
+@media (min-width: 576px) {
+  .background {
+    background-color: var(--bg-color-primary);
+    background-image: url('../../assets/images/backgrounds/fees-background.png');
+    background-position: center;
+    background-size: cover;
+    padding: 55px 5%;
+  }
+
+  .h1,
+  .h2 {
+    color: var(--color-tertiary);
+    margin-right: 30%;
+    text-align: left;
+  }
+
+  .h1 {
+    font-size: 38px;
+    margin-left: 0;
+  }
+
+  .h2 {
+    padding: 0;
+  }
+
+  .register {
+    background-color: transparent;
+    border: 2px solid var(--color-tertiary);
+    margin: 0;
+  }
+}
+
+@keyframes showHeader {
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes showAnchor {
+  100% {
+    transform: scale(1);
+  }
+}

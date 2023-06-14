@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .socials {
+    margin: 0;
+  }
+}

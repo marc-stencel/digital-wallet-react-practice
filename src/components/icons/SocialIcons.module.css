@@ -1,0 +1,28 @@
+.link {
+  align-items: center;
+  background-color: var(--bg-color-primary);
+  border-radius: 5px;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  margin: 10px;
+  width: 32px;
+}
+
+.link:hover,
+.link:focus,
+.link:focus-visible {
+  opacity: 0.8;
+}
+
+.logo {
+  fill: var(--bg-color-tertiary);
+  height: 22px;
+  width: 22px;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    display: block;
+  }
+}

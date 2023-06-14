@@ -1,0 +1,34 @@
+.apps {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0;
+}
+
+.app {
+  display: inline-block;
+  height: 45px;
+  width: 120px;
+}
+
+.app:focus,
+.app:focus-visible,
+.app:hover {
+  opacity: 0.8;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .apps {
+    column-gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .app {
+    height: 55px;
+    width: 140px;
+  }
+}

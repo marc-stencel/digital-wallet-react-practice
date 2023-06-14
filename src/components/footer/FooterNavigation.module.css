@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.list li {
+  align-items: center;
+  border-bottom: 2px solid var(--color-tertiary);
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  margin: 5px 10px 5px 0;
+  padding: 2px 0;
+}
+
+.list li::after {
+  background-color: var(--color-primary-variant-4);
+  content: '';
+  height: 100%;
+  margin-left: 10px;
+  width: 2px;
+}
+
+.list li:last-child::after {
+  display: none;
+}
+
+.list li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.link {
+  color: var(--color-primary);
+}

@@ -1,0 +1,26 @@
+.button {
+  background-color: var(--bg-color-primary-variant-5);
+  box-shadow: 0 0 12px 0 var(--color-quaternary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  height: 30px;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  width: 30px;
+}
+
+.button:hover {
+  background-color: var(--bg-color-primary-variant-4);
+  color: var(--color-tertiary);
+}
+
+@media (min-width: 480px) {
+  .button {
+    top: 15px;
+    right: 15px;
+  }
+}

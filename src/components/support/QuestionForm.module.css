@@ -1,0 +1,44 @@
+.form {
+  margin: 0 auto;
+}
+
+.form input {
+  border: 1px solid var(--color-primary-variant-4);
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 12px 14px;
+  width: 100%;
+}
+
+.form input::placeholder {
+  color: var(--color-primary);
+}
+
+.form input:focus,
+.form input:focus-visible {
+  border-color: transparent;
+  outline: 2px solid var(--color-primary);
+}
+
+.submit {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 5px;
+  width: 50%;
+}
+
+.submit .svg {
+  transition: fill 0.3s linear;
+}
+
+.submit:hover .svg {
+  fill: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .submit {
+    margin-top: 25px;
+  }
+}

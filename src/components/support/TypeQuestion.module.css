@@ -1,0 +1,32 @@
+.search {
+  background-color: var(--bg-color-primary-variant-5);
+  padding: 25px 15px;
+}
+
+.card {
+  background-color: var(--bg-color-tertiary);
+  border-radius: 10px;
+  box-shadow: 0 0 12px -4px var(--color-secondary);
+  padding: 10px;
+}
+
+.h1 {
+  font-size: 24px;
+  margin: 15px 0 20px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .h1 {
+    font-size: 38px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 20px 35px 30px;
+  }
+}

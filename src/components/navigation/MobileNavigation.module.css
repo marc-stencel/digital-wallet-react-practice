@@ -1,0 +1,105 @@
+.mobile-nav {
+  padding: 5px 2% 0 10px;
+  background-color: var(--bg-color-tertiary);
+  box-shadow: 0 10px 10px -12px black;
+  flex-wrap: wrap;
+  min-height: var(--nav-height);
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: calc(var(--nav-height) - 5px);
+}
+
+.navBrand {
+  background: var(--bg-color-primary-variant-3);
+  background: linear-gradient(
+    90deg,
+    var(--bg-color-primary-variant-3) 0%,
+    var(--bg-color-primary-variant-2) 50%,
+    var(--bg-color-primary) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  font-weight: 900;
+  margin-right: auto;
+}
+
+.business,
+.help,
+.login {
+  font-weight: bold;
+  padding: 6px;
+}
+
+.business {
+  color: var(--color-primary-variant-4);
+  font-size: 14px;
+  transition: color 0.3s linear;
+}
+
+.business:hover {
+  color: var(--color-primary-variant-3);
+}
+
+.help,
+.login {
+  align-items: center;
+  border-bottom: 2px solid var(--color-tertiary);
+  color: var(--color-primary-variant-2);
+  display: flex;
+  transition: border-bottom-color 0.3s linear;
+}
+
+.help:hover,
+.login:hover {
+  border-bottom-color: var(--color-primary-variant-2);
+}
+
+.register {
+  background-color: var(--bg-color-primary-variant-3);
+  border: 1px solid var(--color-primary-variant-3);
+  border-radius: 5px;
+  color: var(--color-tertiary);
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 6px;
+  padding: 6px 10px;
+  text-align: center;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  width: 80px;
+}
+
+.register:hover {
+  background-color: var(--bg-color-tertiary);
+  color: var(--color-primary-variant-3);
+}
+
+.dropdown {
+  align-items: flex-start;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.dropdown[aria-expanded='true'] {
+  max-height: 70px;
+  transition: max-height 0.3s linear, visibility 0.3s 0.1s;
+  visibility: visible;
+}
+
+.dropdown[aria-expanded='false'] {
+  max-height: 0px;
+  transition: max-height 0.3s linear, visibility 0.2s;
+  visibility: hidden;
+}
+
+@media (min-width: 415px) {
+  .mobile-nav {
+    display: none;
+  }
+}

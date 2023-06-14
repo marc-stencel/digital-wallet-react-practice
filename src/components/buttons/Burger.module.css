@@ -1,0 +1,7 @@
+.burger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  margin-right: 10px;
+}

@@ -1,0 +1,10 @@
+.detail {
+  border-bottom: 1px solid var(--color-quaternary-variant);
+  padding: 5px 10px 15px;
+}
+
+.label {
+  color: var(--color-quaternary-variant);
+  font-size: 14px;
+  padding: 5px 0;
+}
