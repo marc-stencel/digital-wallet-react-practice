@@ -1,0 +1,41 @@
+.select-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+  padding-right: 5px;
+}
+
+.label {
+  left: 15px;
+  pointer-events: none;
+  position: absolute;
+  top: 30%;
+  transform: translate(-15%, -70%) scale(0.7);
+}
+
+.select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--bg-color-quaternary);
+  border-bottom: 2px solid var(--color-quaternary-variant);
+  background-image: url('../../../assets/images/caret-down-fill.svg');
+  background-position: calc(100% - 15px) 60%;
+  background-repeat: no-repeat;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-top-left-radius: var(--bd-radius-primary);
+  border-top-right-radius: var(--bd-radius-primary);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 25px 15px 10px;
+  width: 100%;
+}
+
+.select:focus {
+  border-bottom-color: var(--color-secondary-variant);
+  outline: none;
+}
+
+.select:hover {
+  background-color: var(--bg-color-quaternary-variant);
+}

@@ -18,7 +18,7 @@
 .topic {
   align-items: center;
   background-color: var(--bg-color-tertiary);
-  border-radius: 5px;
+  border-radius: var(--bd-radius-primary);
   cursor: pointer;
   display: flex;
   font-weight: bold;

@@ -1,0 +1,29 @@
+.form-element {
+  flex-basis: 100%;
+  margin: 0 0 40px;
+  position: relative;
+}
+
+.form-element:has(input[type='checkbox']) {
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .form-element.resize:first-child {
+    flex-basis: 50%;
+    padding-right: 20px;
+  }
+
+  .form-element.resize:nth-child(2) {
+    flex-basis: 50%;
+  }
+
+  .form-element.resize:nth-child(3) {
+    padding-right: 20px;
+    flex-basis: 75%;
+  }
+
+  .form-element.resize:nth-child(4) {
+    flex-basis: 25%;
+  }
+}

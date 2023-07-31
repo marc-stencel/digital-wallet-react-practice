@@ -1,7 +1,7 @@
 .mobile-nav {
   padding: 5px 2% 0 10px;
   background-color: var(--bg-color-tertiary);
-  box-shadow: 0 10px 10px -12px black;
+  box-shadow: 0 10px 10px -12px var(--color-quaternary);
   flex-wrap: wrap;
   min-height: var(--nav-height);
 }
@@ -62,7 +62,7 @@
 .register {
   background-color: var(--bg-color-primary-variant-3);
   border: 1px solid var(--color-primary-variant-3);
-  border-radius: 5px;
+  border-radius: var(--bd-radius-primary);
   color: var(--color-tertiary);
   font-size: 15px;
   font-weight: bold;
@@ -78,6 +78,16 @@
   color: var(--color-primary-variant-3);
 }
 
+.sign-out {
+  background-color: var(--bg-color-tertiary);
+  color: var(--color-primary-variant-3);
+}
+
+.sign-out:hover {
+  background-color: var(--bg-color-primary-variant-3);
+  color: var(--color-tertiary);
+}
+
 .dropdown {
   align-items: flex-start;
   display: flex;
@@ -88,13 +98,13 @@
 
 .dropdown[aria-expanded='true'] {
   max-height: 70px;
-  transition: max-height 0.3s linear, visibility 0.3s 0.1s;
+  transition: max-height 0.3s linear, visibility 0.3s 0.3s;
   visibility: visible;
 }
 
 .dropdown[aria-expanded='false'] {
   max-height: 0px;
-  transition: max-height 0.3s linear, visibility 0.2s;
+  transition: max-height 0.3s 0.1s linear, visibility 0.1s;
   visibility: hidden;
 }
 

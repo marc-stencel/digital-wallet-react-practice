@@ -28,6 +28,7 @@
 }
 
 .link {
+  color: var(--color-primary);
   font-size: 16px;
 }
 
@@ -39,7 +40,7 @@
 @media (min-width: 576px) {
   .log-in {
     background-color: var(--bg-color-tertiary);
-    border-radius: 20px;
+    border-radius: var(--bd-radius-tertiary);
     padding: 30px;
   }
 }

@@ -9,7 +9,7 @@
 .register,
 .help {
   animation: showAnchor 1s 1s forwards;
-  border-radius: 5px;
+  border-radius: var(--bd-radius-primary);
   cursor: pointer;
   display: block;
   font-weight: bold;

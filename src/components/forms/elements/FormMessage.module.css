@@ -1,0 +1,51 @@
+.message-wrapper {
+  align-items: center;
+  animation: showMessage 1s;
+  border-radius: var(--bd-radius-secondary);
+  display: flex;
+  margin-bottom: 15px;
+  padding: 12px;
+}
+
+.message-wrapper.success {
+  background-color: var(--success-background-color);
+}
+
+.message-wrapper.error {
+  background-color: var(--error-background-color);
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.message-wrapper.success .svg {
+  fill: var(--success-text-color);
+}
+
+.message-wrapper.error .svg {
+  fill: var(--error-text-color);
+}
+
+.message {
+  font-size: 14px;
+}
+
+.message-wrapper.success .message {
+  color: var(--success-text-color);
+}
+
+.message-wrapper.error .message {
+  color: var(--error-text-color);
+}
+
+@keyframes showMessage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

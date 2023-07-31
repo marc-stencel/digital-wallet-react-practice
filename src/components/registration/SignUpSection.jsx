@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 
-import SignUpForm from './SignUpForm';
+import FormMessage from '../forms/elements/FormMessage';
+import SignUpForm from '../forms/signup/SignUpForm';
 
 import classes from './SignUpSection.module.css';
 
-const SignUpSection = () => {
+const SignUpSection = ({ hasError, message }) => {
+  const isShowMessage = hasError;
+
   return (
     <section className={classes['sign-up']}>
       <h2>Register</h2>
@@ -14,6 +17,7 @@ const SignUpSection = () => {
           Log in
         </Link>
       </div>
+      {isShowMessage ? <FormMessage message={message} status={false} /> : null}
       <SignUpForm />
     </section>
   );

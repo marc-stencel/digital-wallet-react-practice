@@ -1,0 +1,9 @@
+.dashboard-list {
+  list-style: none;
+  margin: 20px 15px;
+}
+
+.save {
+  margin: 0;
+  padding: 5px 10px;
+}

@@ -1,0 +1,10 @@
+.dashboard {
+  margin-bottom: 100px;
+}
+
+.dashboard h1 {
+  color: var(--color-quaternary-variant-2);
+  font-weight: normal;
+  padding: 40px 0 30px;
+  text-align: center;
+}

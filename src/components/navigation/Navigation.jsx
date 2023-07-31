@@ -3,11 +3,11 @@ import FullNavigation from './FullNavigation';
 
 import classes from './Navigation.module.css';
 
-const Navigation = () => {
+const Navigation = ({ userName, token }) => {
   return (
     <header className={classes.header}>
-      <MobileNavigation />
-      <FullNavigation />
+      <MobileNavigation userName={userName} token={token} />
+      <FullNavigation userName={userName} token={token} />
     </header>
   );
 };

@@ -1,0 +1,16 @@
+.toggle {
+  background-color: transparent;
+  border: none;
+  border-radius: var(--bd-radius-primary);
+  color: var(--color-primary-variant-3);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  width: 80px;
+}
+
+.toggle:hover,
+.toggle:focus-visible {
+  background-color: var(--bg-color-primary-variant-6);
+}

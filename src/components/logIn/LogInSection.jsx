@@ -1,11 +1,26 @@
 import { Link } from 'react-router-dom';
 
-import LogInForm from './LogInForm';
+import FormMessage from '../forms/elements/FormMessage';
+import LogInForm from '../forms/login/LogInForm';
 import Policy from './Policy';
 
 import classes from './LogInSection.module.css';
 
-const LogInSection = () => {
+const LogInSection = ({ hasError, errorMessage }) => {
+  const isSignedUp = localStorage.getItem('isSignedUp');
+  const isLogOut = localStorage.getItem('isLogOut');
+  const isShowMessage = hasError || isSignedUp || isLogOut;
+
+  let successMessage;
+
+  if (isSignedUp) {
+    successMessage = 'Success!! Now you can Log In.';
+    setTimeout(() => localStorage.removeItem('isSignedUp'), 0);
+  } else if (isLogOut) {
+    successMessage = 'Sign-out successful!!';
+    setTimeout(() => localStorage.removeItem('isLogOut'), 0);
+  }
+
   return (
     <div className={classes.wrapper}>
       <section className={classes['log-in']}>
@@ -16,6 +31,12 @@ const LogInSection = () => {
             Register
           </Link>
         </div>
+        {isShowMessage ? (
+          <FormMessage
+            message={errorMessage ? errorMessage : successMessage}
+            status={successMessage}
+          />
+        ) : null}
         <LogInForm />
         <Policy />
       </section>

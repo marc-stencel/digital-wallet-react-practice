@@ -1,0 +1,6 @@
+.title {
+  color: var(--color-quaternary);
+  display: inline-block;
+  margin-bottom: 6px;
+  opacity: 0.8;
+}

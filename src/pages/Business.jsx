@@ -2,7 +2,7 @@ import BusinessIntroduction from '../components/business/BusinessIntroduction';
 import BusinessProducts from '../components/business/BusinessProducts';
 import Banner from '../components/banner/Banner';
 
-const Home = () => {
+const Business = () => {
   return (
     <>
       <BusinessIntroduction />
@@ -12,4 +12,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Business;

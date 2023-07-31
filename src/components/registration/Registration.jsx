@@ -3,11 +3,11 @@ import SignUpSection from './SignUpSection';
 
 import classes from './Registration.module.css';
 
-const Registration = () => {
+const Registration = ({ hasError, message }) => {
   return (
     <div className={classes.wrapper}>
       <PromoSection />
-      <SignUpSection />
+      <SignUpSection hasError={hasError} message={message} />
     </div>
   );
 };

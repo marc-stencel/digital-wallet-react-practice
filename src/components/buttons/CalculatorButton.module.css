@@ -32,7 +32,7 @@
   .button {
     animation: buttonBounce 6s infinite;
     bottom: 40px;
-    border-radius: 50px;
+    border-radius: var(--bd-radius-quaternary);
     box-shadow: 0 0 8px 2px var(--color-primary-variant-4);
     height: 80px;
     right: 3%;

@@ -1,0 +1,7 @@
+.data-wrapper > div:first-of-type {
+  margin-bottom: 20px;
+}
+
+.data-wrapper p {
+  text-transform: capitalize;
+}

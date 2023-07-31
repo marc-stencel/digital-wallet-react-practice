@@ -1,3 +1,7 @@
+export const COUNTRIES = ['Poland', 'USA', 'Germany', 'France', 'Spain'];
+export const LANGUAGES = ['Polish', 'English', 'German', 'French', 'Spanish'];
+export const CURRENCIES = ['PLN', 'USD', 'EUR', 'GBP'];
+
 export const BUSINESS_PRODUCTS = [
   {
     id: 'checkout',
@@ -103,7 +107,7 @@ export const EXCHANGE = {
     id: 'receiver',
     abbr: 'USD',
   },
-  currencyRate: 4.28,
+  currencyRate: 3.99,
   discount: 25,
   senderInitialValue: 1000,
 };

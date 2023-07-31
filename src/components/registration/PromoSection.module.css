@@ -10,7 +10,7 @@
 
 .info {
   background-color: var(--bg-color-primary);
-  border-radius: 10px;
+  border-radius: var(--bd-radius-secondary);
   margin: 20px 30px;
   padding: 20px;
 }

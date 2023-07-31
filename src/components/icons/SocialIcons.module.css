@@ -1,7 +1,7 @@
 .link {
   align-items: center;
   background-color: var(--bg-color-primary);
-  border-radius: 5px;
+  border-radius: var(--bd-radius-primary);
   display: flex;
   height: 32px;
   justify-content: center;

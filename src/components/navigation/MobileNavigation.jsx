@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+
+import { Form, NavLink } from 'react-router-dom';
 
 import Burger from '../buttons/Burger';
+import Button from '../buttons/Button';
 
 import classes from './MobileNavigation.module.css';
 
-const MobileNavigation = () => {
+const MobileNavigation = ({ token, userName }) => {
   const [isMobileNavOpen, setisMobileNavOpen] = useState(false);
 
   const handleBurgerToggle = () => {
@@ -26,18 +28,28 @@ const MobileNavigation = () => {
           onClick={handleBurgerCollapse}>
           Skrill
         </NavLink>
+
         <NavLink
-          to={'/login'}
+          to={userName ? '/dashboard' : '/login'}
           className={classes.login}
           onClick={handleBurgerCollapse}>
-          Log In
+          {userName ? userName : 'Log In'}
         </NavLink>
-        <NavLink
-          to={'/register'}
-          className={classes.register}
-          onClick={handleBurgerCollapse}>
-          Register
-        </NavLink>
+
+        {token ? (
+          <Form method="POST" action="/logout">
+            <Button type="submit" className={classes['sign-out']}>
+              Log Out
+            </Button>
+          </Form>
+        ) : (
+          <NavLink
+            to={'register'}
+            className={classes.register}
+            onClick={handleBurgerCollapse}>
+            Register
+          </NavLink>
+        )}
       </div>
       <div className={classes.dropdown} aria-expanded={isMobileNavOpen}>
         <NavLink
@@ -46,6 +58,7 @@ const MobileNavigation = () => {
           onClick={handleBurgerCollapse}>
           Business
         </NavLink>
+
         <NavLink
           to={'/help'}
           className={classes.help}

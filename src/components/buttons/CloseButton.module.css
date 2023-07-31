@@ -2,7 +2,7 @@
   background-color: var(--bg-color-primary-variant-5);
   box-shadow: 0 0 12px 0 var(--color-quaternary);
   border: none;
-  border-radius: 50%;
+  border-radius: var(--bd-radius-circle);
   cursor: pointer;
   font-size: 24px;
   height: 30px;

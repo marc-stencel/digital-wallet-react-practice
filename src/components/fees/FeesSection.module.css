@@ -20,7 +20,7 @@
   animation: showAnchor 1s 1s forwards;
   background-color: var(--bg-color-primary-variant-3);
   border: 1px solid var(--color-primary-variant-3);
-  border-radius: 5px;
+  border-radius: var(--bd-radius-primary);
   color: var(--color-tertiary);
   cursor: pointer;
   display: block;

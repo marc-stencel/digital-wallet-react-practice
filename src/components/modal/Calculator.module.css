@@ -19,7 +19,7 @@
 .link {
   background-color: var(--bg-color-secondary-variant);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--bd-radius-primary);
   color: var(--color-secondary);
   cursor: pointer;
   display: block;

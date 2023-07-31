@@ -9,7 +9,7 @@
 .register {
   animation: showAnchor 1s 1s forwards;
   border: 1px solid var(--color-tertiary);
-  border-radius: 5px;
+  border-radius: var(--bd-radius-primary);
   color: var(--color-tertiary);
   cursor: pointer;
   display: block;
