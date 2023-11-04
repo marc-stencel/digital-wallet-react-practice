@@ -2,14 +2,13 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAyFNj96cPo399RjibMIe10E216GbEepoM',
-  authDomain: 'react-tescik.firebaseapp.com',
-  databaseURL:
-    'https://react-tescik-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'react-tescik',
-  storageBucket: 'react-tescik.appspot.com',
-  messagingSenderId: '677970941018',
-  appId: '1:677970941018:web:29ca27329492a6dd9eb463',
+  apiKey: import.meta.env.FB_API_KEY,
+  authDomain: import.meta.env.FB_AUTH_DOMAIN,
+  databaseURL: import.meta.env.FB_DATA_BASE_URL,
+  projectId: import.meta.env.FB_PROJECT_ID,
+  storageBucket: import.meta.env.FB_STORAGE_BUCKE,
+  messagingSenderId: import.meta.env.FB_MESSAGING_SENDER_ID,
+  appId: import.meta.env.FB_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
